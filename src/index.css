@@ -167,4 +167,44 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Hero slider animations */
+  @keyframes slide-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .animate-slide-in-up {
+    animation: slide-in-up 0.7s ease-out forwards;
+  }
+
+  .animate-slide-in-down {
+    animation: slide-in-down 0.7s ease-out forwards;
+  }
 }
